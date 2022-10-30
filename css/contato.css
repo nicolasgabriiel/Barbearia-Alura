@@ -1,0 +1,102 @@
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label, form legend{
+display: block;
+margin: 0px 0 10px 0;
+font-size: 20px;
+}
+
+.input-padrao{
+display: block;
+margin: 0 0 25px 0;
+padding: 10px 20px;
+width: 50%;
+}
+
+.checkbox{
+    margin: 30px 0;
+}
+
+.enviar{
+    width: 40%;
+    cursor: pointer;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: orange;
+    border: none;
+    border-radius: 10px;
+    margin: 0 68px;
+    display: block;
+    transition: 0.5s all;
+    color: white;
+
+}
+.enviar:hover{
+    background-color: darkorange;
+    transform: scale(1.08);
+}
+
+table{
+    margin: 15px 0 40px 68px;
+    width: 40%;
+    
+}
+thead{
+    font-weight: bold;
+    background: #444444;
+    color:white
+}
+
+td, th{
+    font-size: 18px;
+    padding: 8px 15px;
+    border: 2px solid black	;
+    text-align: center;
+    
+}
+
+td:hover, th:hover{
+    scale: 1.01;
+}
+
+select{
+    width: 29%;
+    height: 25px;
+    text-align: center;
+}
+option{
+    font-size: 12px;
+}
+
+fieldset{
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 980px) {
+    form, table{
+        margin-left: 40px;
+    }
+    .enviar{
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    main{ 
+        width: auto;
+    }
+    .input-padrao, .enviar, table, select{
+        width: 80%;
+}
+    .enviar{
+        margin-left: 15px ;
+    }
+}
